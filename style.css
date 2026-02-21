@@ -9,6 +9,7 @@ body
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    color: orange;
 }
 
 h1
@@ -17,6 +18,7 @@ h1
     margin-block-end: 0;
     font-size: 96px;
     padding-top: 150px;
+    
 }
 
 h2
@@ -27,10 +29,11 @@ h2
     text-align: center;
 }
 
-.atfBG
+.atfimgBG
 {
-    background-color: gray;
+    background-image: url(img/backgrund\ website.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -61,7 +64,7 @@ h2
 .nav a
 {
     text-decoration: none;
-    color: black;
+    color:  orange;
     font-size: 18px;
     font-weight: bold;
 }
