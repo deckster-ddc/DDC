@@ -10,13 +10,14 @@ body
     padding: 0;
     font-family: Arial, sans-serif;
     color: orange;
+    font-family: 'Wahroonga', sans-serif;
 }
 
 h1
 {
     margin-block-start: 0;
     margin-block-end: 0;
-    font-size: 96px;
+    font-size: 80px;
     padding-top: 150px;
     
 }
@@ -39,9 +40,9 @@ h2
 
 .atfLogo
 {
-    background-color: violet;
+    background-image: url(img/logo.png);
     background-size: cover;
-    width: 64px;
+    width: 128px;
     height: 64px;
 }
 
