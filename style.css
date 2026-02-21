@@ -13,12 +13,18 @@ body
     font-family: 'Wahroonga', sans-serif;
 }
 
+p
+{
+    font-size: 24px;
+    text-align: center;
+}
+
 h1
 {
     margin-block-start: 0;
     margin-block-end: 0;
     font-size: 80px;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
 }
 
