@@ -1,0 +1,140 @@
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1
+{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 96px;
+    padding-top: 150px;
+}
+
+h2
+{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 80px;
+    text-align: center;
+}
+
+.atfBG
+{
+    background-color: gray;
+    background-size: cover;
+    height: 100vh;
+}
+
+.atfLogo
+{
+    background-color: violet;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+}
+
+.atfHeader
+{
+    padding-left: 128px;
+    padding-right: 128px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav
+{
+    display: flex;
+    gap: 32px;
+}
+
+.nav a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav a:hover
+{
+    text-decoration: underline;
+}
+
+.atfHeadline
+{
+    padding-left: 128px;
+    padding-right: 128px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventsBG
+{
+    background-color: darkgreen;
+    background-size: cover;
+    height: 100vh;
+    padding: 128px;
+}
+
+.artistsBG
+{
+    background-color: darkblue;
+    background-size: cover;
+    height: 100vh;
+    padding: 128px;
+}
+
+.aboutBG
+{
+    background-color: darkred;
+    background-size: cover;
+    height: 100vh;
+    padding: 128px;
+}
+
+footer
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 128px;
+    padding-right: 128px;
+    height: 100px;
+}
+
+footer a
+{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+
+.footerNav
+{
+    display: flex;
+    gap: 32px;
+}
+
+.fontSize32 {
+    font-size: 32px;
+}
