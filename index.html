@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,38 +14,97 @@
 </head>
 <body>
 
-    <section class="atfimgBG">
+    <header class="fixed-header">
 
-        <header>
+        <div>
+            <a href="index.html"><img class="logo"src="/img/logo.png" alt="hero-header-logo"></a>
+        </div>
 
-                <a class="logo" href=""></a>
 
-            <nav class="nav off-screen-menu">
-                <a href="#">HOME</a>
-                <a href="#">EVENTS</a>
-                <a href="#">ARTISTS</a>
-                <a href="#">ABOUT</a>
-                <a href="#">KONTACT</a>
+        <div>
+            <nav id="off-screen-menu" class="nav off-screen-menu">
+                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#upcoming-event-section">UPCOMING EVENT</a>
+                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#">THE FUTURE</a>
+                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#">THE PAST</a>
+                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#">THE CREW</a>
+                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#">CONTACT</a>
             </nav>
 
-            <div class="ham-menu">
+            <div id="ham-menu" class="ham-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </header>
+        </div>
+        
+    </header>
 
-        <div class="atfHeadline">
+    <section id="hero-section" class="hero-section hero-image-bg">
+
+        <div class="hero-content">
             <H1>Demolition Dirt Crew</H1>
-            <p class="fontSize32">Your East German tekkno network.</p>
+
+            <p>Your East German tekkno network.</p>
+       
+            <p><span>Ich arbeite an mir!<br>Hab noch etwas Geduld.</span></p>
         </div>
 
-        <p>Ich arbeite an mir!<br>Hab noch etwas Geduld.</p>
-    
+    </section>
+
+    <section id="upcoming-event-section" class="upcoming-event-section">
+        <h2>UPCOMING EVENT</h2>
+
+        <div class="upcoming-event-container">
+
+            <h3>Next Event Name</h3>
+
+            <div class="date-container">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-icon lucide-calendar"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+
+                <div class="date-time-box">
+                    <p id="date">04.07.2026</p>
+                    <p id="time">23.00 - OPEN END</p>
+                </div>
+
+            </div>
+                
+            <div class="location-container">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                
+                <address id="location-address">Alte Fabrikhalle, Leipzig</address>
+
+            </div>
+
+            <div class="lineup-container">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music-icon lucide-music"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+
+                <div>
+                    <h3>LINEUP</h3>
+                    <ul>
+                        <li>ARTIST A</li>
+                        <li>ARTIST B</li>
+                        <li>ARTIST C</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <button>TICKETS</button>
+
+        </div>
+
+    </section>
+
+    <section id="timeline-section">
+
+
+
     </section>
 
     <footer>
-            <a class="logo" href=""></a>
 
         <nav class="footerNav">
             <a href="https://soundcloud.com/deckster-live?ref=clipboard&p=i&c=1&si=16EBE6F779894096B70F8736BE4121AD&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Soundcloud</a>
