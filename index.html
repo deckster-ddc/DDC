@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +11,6 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.cdnfonts.com/css/wahroonga" rel="stylesheet">
 </head>
 <body>
 
@@ -24,10 +24,10 @@
         <div>
             <nav id="off-screen-menu" class="nav off-screen-menu">
                 <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#upcoming-event-section">UPCOMING EVENT</a>
-                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#">THE FUTURE</a>
-                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#">THE PAST</a>
-                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#">THE CREW</a>
-                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#">CONTACT</a>
+                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#timeline-section">THE FUTURE</a>
+                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#the-past">THE PAST</a>
+                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#the-crew-section">THE CREW</a>
+                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#contact-section">CONTACT</a>
             </nav>
 
             <div id="ham-menu" class="ham-menu">
@@ -52,6 +52,7 @@
     </section>
 
     <section id="upcoming-event-section" class="upcoming-event-section">
+
         <h2>UPCOMING EVENT</h2>
 
         <div class="upcoming-event-container">
@@ -98,21 +99,132 @@
 
     </section>
 
-    <section id="timeline-section">
+    <section id="timeline-section" class="timeline-section">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-item-left">
+            <!-- Jahr -->
+            <h2></h2>
+            <!-- Titel -->
+            <h3 class="timeline-item-h3-settings">Future Vision</h3>
+            <!-- Text -->
+            <p>Pläne für die Zukunft?</p>
+        </div>
+
+        <div class="timeline-item-right">
+            <!-- Jahr -->
+            <h2>2026</h2>
+            <!-- Titel -->
+            <h3>Aktuelles</h3>
+            <!-- Text -->
+            <p>Pläne für dieses Jahr?</p>
+        </div>
+
+        <div class="timeline-item-left">
+            <!-- Jahr -->
+            <h2>20xx</h2>
+            <!-- Titel -->
+            <h3>Abriss Party</h3>
+            <!-- Text -->
+            <p>Vergange Events?</p>
+        </div>
+
+        <div id="the-past" class="timeline-item-right">
+            <!-- Jahr -->
+            <h2>20xx</h2>
+            <!-- Titel -->
+            <h3>Tell Me</h3>
+            <!-- Text -->
+            <p>Was gibts sonst noch?</p>
+        </div>
+
+        <div class="timeline-item-left">
+            <!-- Jahr -->
+            <h2>20xx</h2>
+            <!-- Titel -->
+            <h3>Gründung?</h3>
+            <!-- Text -->
+            <p>Wie fing alles an?</p>
+        </div>
+
+    </section>
+
+    <section id="the-crew-section" class="the-crew-section">
+
+        <h2>THE CREW</h2>
+
+        <div id="crew-item" class="crew-item border-right">
+
+            <img class="crew-image" src="img/fliege_white_png.png" alt="Bild von Deckster">
+
+            <!-- WHO ARE U? -->
+            <h2>DECKSTER</h2>
+            <!-- WHATS UR PLAY? -->
+            <h3>GENRE</h3>
+            <p>Was spielst du?</p>
+            <!-- WER BIST DU? -->
+            <h3>ABOUT</h3>
+            <p>2, 3 Sätze über dich?</p>
+
+            <div class="crew-links">
+                <a href="https://soundcloud.com/deckster-live?ref=clipboard&p=i&c=1&si=16EBE6F779894096B70F8736BE4121AD&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Soundcloud</a>
+                <a href="https://www.instagram.com/deckster_sonst_nix?igsh=bDYzczFnbzRoZ2J0&utm_source=qr" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/people/Deckster-Sonst-Nix/100086247326747/?mibextid=wwXIfr&rdid=zUn0RpJ7BxYJoKIk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CLLZu7Jut%2F%3Fmibextid%3DwwXIfr" target="_blank">facebook</a>
+            </div>
+        </div>
+
+        <div id="crew-item" class="crew-item border-left">
+
+            <img class="crew-image" src="img/fliege_white_png.png" alt="Bild von Deckster">
+
+            <!-- WHO ARE U? -->
+            <h2>WER BIST DU?</h2>
+            <!-- WHATS UR PLAY? -->
+            <h3>GENRE</h3>
+            <p>Was spielst du?</p>
+            <!-- WER BIST DU? -->
+            <h3>ABOUT</h3>
+            <p>2, 3 Sätze über dich?</p>
+
+            <div class="crew-links">
+                <a href="#" target="_blank">Soundcloud</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">facebook</a>
+            </div>
+        </div>
+
+
+
 
 
 
     </section>
 
+    <section id="contact-section" class="contact-section">
+
+        <h2>CONTACT</h2>
+
+        <a class="contact-item" href="https://soundcloud.com/deckster-live?ref=clipboard&p=i&c=1&si=16EBE6F779894096B70F8736BE4121AD&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music-icon lucide-music"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>    
+            <p>SOUNDCLOUD</p>
+        </a>
+
+        <a class="contact-item" href="https://www.instagram.com/deckster_sonst_nix?igsh=bDYzczFnbzRoZ2J0&utm_source=qr" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <p>INSTAGRAM</p>
+        </a>
+
+        <a class="contact-item" href="https://www.facebook.com/people/Deckster-Sonst-Nix/100086247326747/?mibextid=wwXIfr&rdid=zUn0RpJ7BxYJoKIk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CLLZu7Jut%2F%3Fmibextid%3DwwXIfr" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <p>FACEBOOK</p>
+        </a>
+
+    </section>
+
     <footer>
-
-        <nav class="footerNav">
-            <a href="https://soundcloud.com/deckster-live?ref=clipboard&p=i&c=1&si=16EBE6F779894096B70F8736BE4121AD&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Soundcloud</a>
-            <a href="https://www.instagram.com/deckster_sonst_nix?igsh=bDYzczFnbzRoZ2J0&utm_source=qr" target="_blank">Insta</a>
-            <a href="https://www.facebook.com/people/Deckster-Sonst-Nix/100086247326747/?mibextid=wwXIfr&rdid=zUn0RpJ7BxYJoKIk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CLLZu7Jut%2F%3Fmibextid%3DwwXIfr" target="_blank">facebook</a>
-            <a href=""></a>
-        </nav>
-
+        <a href="#" target="_blank">Impressum</a>
+        <a href="#" target="_blank">Datenschutz</a>
     </footer>
 
     <script src="script.js"></script>
