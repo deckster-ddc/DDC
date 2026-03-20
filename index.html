@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="img/favicon.jpg">
+    <link rel="icon" href="./assets/img/icons/favicon.jpg">
 
     <title>Demolition Dirt Crew</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
     <header class="fixed-header">
 
-        <div>
-            <a href="index.html"><img class="logo"src="/img/logo.png" alt="hero-header-logo"></a>
+        <a href="index.html"><img class="logo" src="./assets/img/logo.png" alt="ddc-logo"></a>
+
+        <nav id="off-screen-menu" class="off-screen-menu normal-screen-menu">
+            <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#upcoming-event-section">UPCOMING EVENT</a>
+            <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#timeline-section">THE FUTURE</a>
+            <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#the-past">THE PAST</a>
+            <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#the-crew-section">THE CREW</a>
+            <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#contact-section">CONTACT</a>
+        </nav>
+
+        <div id="ham-menu" class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-
-        <div>
-            <nav id="off-screen-menu" class="nav off-screen-menu">
-                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#upcoming-event-section">UPCOMING EVENT</a>
-                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#timeline-section">THE FUTURE</a>
-                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#the-past">THE PAST</a>
-                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#the-crew-section">THE CREW</a>
-                <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#contact-section">CONTACT</a>
-            </nav>
-
-            <div id="ham-menu" class="ham-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        
     </header>
 
     <section id="hero-section" class="hero-section hero-image-bg">
@@ -45,55 +42,78 @@
             <H1>Demolition Dirt Crew</H1>
 
             <p>Your East German tekkno network.</p>
-       
-            <p><span>Ich arbeite an mir!<br>Hab noch etwas Geduld.</span></p>
         </div>
 
     </section>
 
     <section id="upcoming-event-section" class="upcoming-event-section">
 
-        <h2>UPCOMING EVENT</h2>
+        <h2>Aktuelles</h2>
 
         <div class="upcoming-event-container">
 
-            <h3>Next Event Name</h3>
+            <h3>hexenjagd Edition</h3>
 
             <div class="date-container">
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-icon lucide-calendar"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-calendar-icon lucide-calendar">
+                    <path d="M8 2v4" />
+                    <path d="M16 2v4" />
+                    <rect width="18" height="18" x="3" y="4" rx="2" />
+                    <path d="M3 10h18" />
+                </svg>
 
                 <div class="date-time-box">
-                    <p id="date">04.07.2026</p>
+                    <p id="date">30.04.2026</p>
                     <p id="time">23.00 - OPEN END</p>
                 </div>
 
             </div>
-                
+
             <div class="location-container">
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
-                
-                <address id="location-address">Alte Fabrikhalle, Leipzig</address>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-map-pin-icon lucide-map-pin">
+                    <path
+                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                    <circle cx="12" cy="10" r="3" />
+                </svg>
+
+                <address id="location-address">
+                    <p>Club Lamporphyr</p>
+                    <p>Wilthener Str. 44</p>
+                    <p>Bautzen</p>
+                </address>
 
             </div>
 
             <div class="lineup-container">
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music-icon lucide-music"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-music-icon lucide-music">
+                    <path d="M9 18V5l12-2v13" />
+                    <circle cx="6" cy="18" r="3" />
+                    <circle cx="18" cy="16" r="3" />
+                </svg>
 
                 <div>
                     <h3>LINEUP</h3>
                     <ul>
-                        <li>ARTIST A</li>
-                        <li>ARTIST B</li>
-                        <li>ARTIST C</li>
+                        <li>HUMAN LIKE MACHINES</li>
+                        <li>SEBASTIAN SANDMANN</li>
+                        <li>MARTIN W. _live!</li>
+                        <li>NEEDLEHOPPER</li>
+                        <li>DECKSTER</li>
                     </ul>
                 </div>
 
             </div>
 
-            <button>TICKETS</button>
+            <a href="https://playground.manus.space/"><button>TICKETS</button></a>
 
         </div>
 
@@ -103,49 +123,121 @@
 
         <div class="timeline-dot"></div>
 
-        <div class="timeline-item-left">
-            <!-- Jahr -->
-            <h2></h2>
-            <!-- Titel -->
-            <h3 class="timeline-item-h3-settings">Future Vision</h3>
-            <!-- Text -->
-            <p>Pläne für die Zukunft?</p>
+        <div class="timeline-item-right reveal">
+
+            <div class="timeline-item-dot"></div>
+
+            <h2>02/2026</h2>
+
+            <h3>the playground</h3>
+
+            <img src="./assets/img/flyer/the-playground-underground-02-2026.jpg"
+                alt="Playgound Eventflyer Februar 2026">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-expand-icon lucide-expand">
+                <path d="m15 15 6 6" />
+                <path d="m15 9 6-6" />
+                <path d="M21 16v5h-5" />
+                <path d="M21 8V3h-5" />
+                <path d="M3 16v5h5" />
+                <path d="m3 21 6-6" />
+                <path d="M3 8V3h5" />
+                <path d="M9 9 3 3" />
+            </svg>
         </div>
 
-        <div class="timeline-item-right">
-            <!-- Jahr -->
-            <h2>2026</h2>
-            <!-- Titel -->
-            <h3>Aktuelles</h3>
-            <!-- Text -->
-            <p>Pläne für dieses Jahr?</p>
+        <div class="timeline-item-left reveal">
+
+            <div class="timeline-item-dot"></div>
+
+            <h2>06/2025</h2>
+
+            <h3>the playground</h3>
+
+            <img src="./assets/img/flyer/the-playground-b-day-06-2025.png" alt="Playgound Eventflyer Juni 2026">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-expand-icon lucide-expand">
+                <path d="m15 15 6 6" />
+                <path d="m15 9 6-6" />
+                <path d="M21 16v5h-5" />
+                <path d="M21 8V3h-5" />
+                <path d="M3 16v5h5" />
+                <path d="m3 21 6-6" />
+                <path d="M3 8V3h5" />
+                <path d="M9 9 3 3" />
+            </svg>
         </div>
 
-        <div class="timeline-item-left">
-            <!-- Jahr -->
-            <h2>20xx</h2>
-            <!-- Titel -->
-            <h3>Abriss Party</h3>
-            <!-- Text -->
-            <p>Vergange Events?</p>
+        <div class="timeline-item-right reveal">
+
+            <div class="timeline-item-dot"></div>
+
+            <h2>01/2016</h2>
+
+            <h3>Para Neujahr</h3>
+
+            <img src="./assets/img/flyer/para-neujahr-01-2016.jpg" alt="Para Neujahr Eventflyer Januar 2016">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-expand-icon lucide-expand">
+                <path d="m15 15 6 6" />
+                <path d="m15 9 6-6" />
+                <path d="M21 16v5h-5" />
+                <path d="M21 8V3h-5" />
+                <path d="M3 16v5h5" />
+                <path d="m3 21 6-6" />
+                <path d="M3 8V3h5" />
+                <path d="M9 9 3 3" />
+            </svg>
         </div>
 
-        <div id="the-past" class="timeline-item-right">
-            <!-- Jahr -->
-            <h2>20xx</h2>
-            <!-- Titel -->
-            <h3>Tell Me</h3>
-            <!-- Text -->
-            <p>Was gibts sonst noch?</p>
+        <div class="timeline-item-left reveal">
+
+            <div class="timeline-item-dot"></div>
+
+            <h2>05/2015</h2>
+
+            <h3>Triebwerk Dresden</h3>
+
+            <img src="./assets/img/flyer/triebwerk-dresden-ddc-05-2015.jpg" alt="Triebwerk Dresden Eventflyer Mai 2015">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-expand-icon lucide-expand">
+                <path d="m15 15 6 6" />
+                <path d="m15 9 6-6" />
+                <path d="M21 16v5h-5" />
+                <path d="M21 8V3h-5" />
+                <path d="M3 16v5h5" />
+                <path d="m3 21 6-6" />
+                <path d="M3 8V3h5" />
+                <path d="M9 9 3 3" />
+            </svg>
         </div>
 
-        <div class="timeline-item-left">
-            <!-- Jahr -->
-            <h2>20xx</h2>
-            <!-- Titel -->
-            <h3>Gründung?</h3>
-            <!-- Text -->
-            <p>Wie fing alles an?</p>
+        <div id="the-past" class="timeline-item-right reveal">
+
+            <div class="timeline-item-dot"></div>
+
+            <h2>06/2012</h2>
+
+            <h3>from tekkno to core</h3>
+
+            <img src="./assets/img/flyer/from-tekkno-to-core-06-2012.jpg"
+                alt="from tekkno to core Eventflyer Juni 2012">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-expand-icon lucide-expand">
+                <path d="m15 15 6 6" />
+                <path d="m15 9 6-6" />
+                <path d="M21 16v5h-5" />
+                <path d="M21 8V3h-5" />
+                <path d="M3 16v5h5" />
+                <path d="m3 21 6-6" />
+                <path d="M3 8V3h5" />
+                <path d="M9 9 3 3" />
+            </svg>
         </div>
 
     </section>
@@ -156,48 +248,58 @@
 
         <div id="crew-item" class="crew-item border-right">
 
-            <img class="crew-image" src="img/fliege_white_png.png" alt="Bild von Deckster">
+            <img class="crew-image" src="./assets/img/icons/fliege_white.png" alt="Bild von Deckster">
 
-            <!-- WHO ARE U? -->
             <h2>DECKSTER</h2>
-            <!-- WHATS UR PLAY? -->
+
             <h3>GENRE</h3>
             <p>Was spielst du?</p>
-            <!-- WER BIST DU? -->
+
             <h3>ABOUT</h3>
             <p>2, 3 Sätze über dich?</p>
 
             <div class="crew-links">
-                <a href="https://soundcloud.com/deckster-live?ref=clipboard&p=i&c=1&si=16EBE6F779894096B70F8736BE4121AD&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Soundcloud</a>
-                <a href="https://www.instagram.com/deckster_sonst_nix?igsh=bDYzczFnbzRoZ2J0&utm_source=qr" target="_blank">Instagram</a>
-                <a href="https://www.facebook.com/people/Deckster-Sonst-Nix/100086247326747/?mibextid=wwXIfr&rdid=zUn0RpJ7BxYJoKIk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CLLZu7Jut%2F%3Fmibextid%3DwwXIfr" target="_blank">facebook</a>
+                <div class="crew-link-text">
+                    <a href="https://soundcloud.com/deckster-live?ref=clipboard&p=i&c=1&si=16EBE6F779894096B70F8736BE4121AD&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                        target="_blank">Soundcloud
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-external-link-icon lucide-external-link">
+                            <path d="M15 3h6v6" />
+                            <path d="M10 14 21 3" />
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="crew-link-text">
+                    <a href="https://www.instagram.com/deckster_sonst_nix?igsh=bDYzczFnbzRoZ2J0&utm_source=qr"
+                        target="_blank">Instagram
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-external-link-icon lucide-external-link">
+                            <path d="M15 3h6v6" />
+                            <path d="M10 14 21 3" />
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="crew-link-text">
+                    <a href="https://www.facebook.com/people/Deckster-Sonst-Nix/100086247326747/?mibextid=wwXIfr&rdid=zUn0RpJ7BxYJoKIk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CLLZu7Jut%2F%3Fmibextid%3DwwXIfr"
+                        target="_blank">facebook
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-external-link-icon lucide-external-link">
+                            <path d="M15 3h6v6" />
+                            <path d="M10 14 21 3" />
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        </svg>
+                    </a>
+                </div>
+
             </div>
         </div>
-
-        <div id="crew-item" class="crew-item border-left">
-
-            <img class="crew-image" src="img/fliege_white_png.png" alt="Bild von Deckster">
-
-            <!-- WHO ARE U? -->
-            <h2>WER BIST DU?</h2>
-            <!-- WHATS UR PLAY? -->
-            <h3>GENRE</h3>
-            <p>Was spielst du?</p>
-            <!-- WER BIST DU? -->
-            <h3>ABOUT</h3>
-            <p>2, 3 Sätze über dich?</p>
-
-            <div class="crew-links">
-                <a href="#" target="_blank">Soundcloud</a>
-                <a href="#" target="_blank">Instagram</a>
-                <a href="#" target="_blank">facebook</a>
-            </div>
-        </div>
-
-
-
-
-
 
     </section>
 
@@ -205,19 +307,70 @@
 
         <h2>CONTACT</h2>
 
-        <a class="contact-item" href="https://soundcloud.com/deckster-live?ref=clipboard&p=i&c=1&si=16EBE6F779894096B70F8736BE4121AD&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music-icon lucide-music"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>    
-            <p>SOUNDCLOUD</p>
+        <a class="contact-item"
+            href="https://soundcloud.com/deckster-live?ref=clipboard&p=i&c=1&si=16EBE6F779894096B70F8736BE4121AD&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+            target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-music-icon lucide-music">
+                <path d="M9 18V5l12-2v13" />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="18" cy="16" r="3" />
+            </svg>
+
+            <div class="contact-item-text">
+                <p>SOUNDCLOUD</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-external-link-icon lucide-external-link">
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14 21 3" />
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
+            </div>
         </a>
 
-        <a class="contact-item" href="https://www.instagram.com/deckster_sonst_nix?igsh=bDYzczFnbzRoZ2J0&utm_source=qr" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-            <p>INSTAGRAM</p>
+        <a class="contact-item" href="https://www.instagram.com/deckster_sonst_nix?igsh=bDYzczFnbzRoZ2J0&utm_source=qr"
+            target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-instagram-icon lucide-instagram">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+
+            <div class="contact-item-text">
+                <p>INSTAGRAM</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-external-link-icon lucide-external-link">
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14 21 3" />
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
+            </div>
         </a>
 
-        <a class="contact-item" href="https://www.facebook.com/people/Deckster-Sonst-Nix/100086247326747/?mibextid=wwXIfr&rdid=zUn0RpJ7BxYJoKIk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CLLZu7Jut%2F%3Fmibextid%3DwwXIfr" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            <p>FACEBOOK</p>
+        <a class="contact-item"
+            href="https://www.facebook.com/people/Deckster-Sonst-Nix/100086247326747/?mibextid=wwXIfr&rdid=zUn0RpJ7BxYJoKIk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CLLZu7Jut%2F%3Fmibextid%3DwwXIfr"
+            target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-facebook-icon lucide-facebook">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+
+            <div class="contact-item-text">
+                <p>FACEBOOK</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-external-link-icon lucide-external-link">
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14 21 3" />
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
+            </div>
         </a>
 
     </section>
@@ -230,4 +383,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
