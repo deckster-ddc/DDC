@@ -133,12 +133,26 @@ h3 {
     z-index: 2;
 }
 
+/* for header and footer */
+.content-border-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+
+    margin: 0 auto;
+    max-width: 1440px;
+
+    flex: 1;
+}
+
 .logo {
     background-size: cover;
     height: 32px;
 }
 
-.off-screen-menu {
+.header-nav-links {
     background-color: black;
     position: fixed;
     top: 64px;
@@ -153,13 +167,12 @@ h3 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 
     gap: 16px;
     transition: .3s ease;
 }
 
-.off-screen-menu.active {
+.header-nav-links.active {
     right: 0;
 }
 
@@ -268,6 +281,9 @@ h3 {
     border-left: 1px solid #e17d05;
     border-bottom: 1px solid #e17d05;
     gap: 16px;
+
+    max-width: 32rem;
+    margin: 0 auto;
 }
 
 .date-container {
@@ -331,6 +347,11 @@ ul {
     flex-direction: column;
     padding-top: 16px;
     gap: 64px;
+}
+
+.max-content {
+    max-width: 32rem;
+    margin: 0 auto;
 }
 
 .timeline-section h2 {
@@ -430,6 +451,9 @@ ul {
 
 .crew-item {
     padding: 16px;
+
+    max-width: 32rem;
+    margin: 0 auto;
 }
 
 .border-left {
@@ -522,24 +546,47 @@ footer {
     .fixed-header {
         padding-left: 64px;
         padding-right: 64px;
-        height: 128px;
-    }
-
-    .normal-screen-menu {
-        background-color: transparent;
-        position: static;
-        justify-content: flex-end;
-        flex-direction: row;
+        height: 96px;
     }
 
     .ham-menu {
         display: none;
     }
 
+    .header-nav-links {
+        position: static;
+        justify-content: end;
+        flex-direction: row;
+        align-self: end;
 
+        gap: 36px;
+    }
 
+    .hero-section {
+        padding-right: 64px;
+        padding-left: 64px;
+    }
 
-    /* mehr Platz → mehr Layout */
+    /* TIMELINE SECTION */
+
+    .timeline-section {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .timeline-section::before {
+        content: "";
+        position: absolute;
+        left: 70px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: white;
+    }
+
+    .timeline-item-dot {
+        left: -3px;
+    }
 
 }
 
@@ -547,6 +594,49 @@ footer {
 
 @media (min-width: 1024px) {
 
-    /* Desktop Erweiterungen */
+    .logo {
+        height: 96px;
+    }
+
+    .fixed-header {
+        padding-left: 128px;
+        padding-right: 128px;
+        height: 128px;
+    }
+
+    .ham-menu {
+        display: none;
+    }
+
+    .header-nav-links {
+        position: static;
+        justify-content: end;
+        flex-direction: row;
+        align-self: end;
+
+        gap: 36px;
+    }
+
+    .hero-section {
+        padding-right: 129px;
+        padding-left: 128px;
+    }
+
+    /* TIMELINE SECTION */
+
+    .timeline-section {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+
+    .timeline-section::before {
+        content: "";
+        position: absolute;
+        left: 132px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: white;
+    }
 
 }

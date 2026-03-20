@@ -18,21 +18,24 @@
 
     <header class="fixed-header">
 
-        <a href="index.html"><img class="logo" src="./assets/img/logo.png" alt="ddc-logo"></a>
+        <div class="content-border-box">
+            <a href="index.html"><img class="logo" src="./assets/img/logo.png" alt="ddc-logo"></a>
 
-        <nav id="off-screen-menu" class="off-screen-menu normal-screen-menu">
-            <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#upcoming-event-section">UPCOMING EVENT</a>
-            <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#timeline-section">THE FUTURE</a>
-            <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#the-past">THE PAST</a>
-            <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#the-crew-section">THE CREW</a>
-            <a id="off-screen-menu-link" onclick="hideOfScreenMenu()" href="#contact-section">CONTACT</a>
-        </nav>
+            <nav id="header-nav-links" class="header-nav-links">
+                <a id="header-nav-link" onclick="hideOfScreenMenu()" href="#upcoming-event-section">UPCOMING EVENT</a>
+                <a id="header-nav-link" onclick="hideOfScreenMenu()" href="#timeline-section">THE FUTURE</a>
+                <a id="header-nav-link" onclick="hideOfScreenMenu()" href="#the-past">THE PAST</a>
+                <a id="header-nav-link" onclick="hideOfScreenMenu()" href="#the-crew-section">THE CREW</a>
+                <a id="header-nav-link" onclick="hideOfScreenMenu()" href="#contact-section">CONTACT</a>
+            </nav>
 
-        <div id="ham-menu" class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div id="ham-menu" class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+
 
     </header>
 
@@ -121,6 +124,7 @@
 
     <section id="timeline-section" class="timeline-section">
 
+        <!-- <div class="max-content"> -->
         <div class="timeline-dot"></div>
 
         <div class="timeline-item-right reveal">
@@ -239,6 +243,9 @@
                 <path d="M9 9 3 3" />
             </svg>
         </div>
+
+        <!-- </div> -->
+
 
     </section>
 

@@ -1,6 +1,6 @@
 
 const hamMenu = document.getElementById("ham-menu");
-const offScreenMenu = document.getElementById("off-screen-menu");
+const offScreenMenu = document.getElementById("header-nav-links");
 
 const reveals = document.querySelectorAll(".reveal");
 
