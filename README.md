@@ -15,6 +15,7 @@ Die Seite wird mit [Jekyll](https://jekyllrb.com/) gebaut. Das macht GitHub Page
 | `_data/*.yml` | alle Inhalte: Events, Timeline, Crew, Kontakt |
 | `assets/img/flyer/` | Flyer; die Galerie liest den Ordner automatisch aus |
 | `index.html`, `galerie.html` | Seiten |
+| `impressum.md`, `datenschutz.md` | Rechtstexte; Angaben kommen aus `_data/impressum.yml` |
 | `_layouts/`, `_includes/` | HTML-Gerüst, Header, Footer, Lightbox, Icons |
 | `_sass/` + `assets/css/style.scss` | Styles (SCSS) |
 | `assets/js/` | Menü, Scroll-Animation, Lightbox |

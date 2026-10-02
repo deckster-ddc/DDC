@@ -136,6 +136,13 @@ Datei: **`_data/kontakt.yml`**. Als `icon` gehen: `music`, `instagram`, `faceboo
 
 ---
 
+## Impressum & Datenschutz
+
+Datei: **`_data/impressum.yml`**. Name, Anschrift und E-Mail stehen dort **einmal** und erscheinen
+automatisch im Impressum und in der Datenschutzerklärung. Bei Umzug oder neuer E-Mail nur dort ändern.
+
+---
+
 ## Etwas ist kaputt?
 
 Wenn nach dem Speichern nichts passiert oder die Seite komisch aussieht:

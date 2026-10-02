@@ -1,0 +1,17 @@
+# ============================================================
+# IMPRESSUM & DATENSCHUTZ – Angaben zur verantwortlichen Person
+# ============================================================
+# Diese Angaben erscheinen im Impressum UND in der Datenschutzerklärung.
+# Pflicht: Name, Anschrift (keine Postfach-Adresse) und E-Mail.
+# Die Platzhalter in [ECKIGEN KLAMMERN] ersetzen, die Anführungszeichen stehen lassen.
+
+name: "[VOR- UND NACHNAME]"
+strasse: "[STRASSE HAUSNUMMER]"
+ort: "[PLZ ORT]"
+email: "[E-MAIL-ADRESSE]"
+
+# Optional, aber empfohlen (zweiter schneller Kontaktweg). Leer lassen: telefon: ""
+telefon: "[TELEFONNUMMER]"
+
+# Datum der Datenschutzerklärung – bei Änderungen anpassen
+stand: "[MONAT JAHR]"
