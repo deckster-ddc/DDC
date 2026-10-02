@@ -1,0 +1,24 @@
+<dialog id="lightbox" class="lightbox" aria-labelledby="lightbox-title" closedby="any">
+
+    <header class="lightbox-header">
+        <h2 id="lightbox-title"></h2>
+        <button class="lightbox-button" data-lightbox="close" aria-label="Schließen">
+            {% include icons/x.svg %}
+        </button>
+    </header>
+
+    <img class="lightbox-image" src="" alt="">
+
+    <footer class="lightbox-footer">
+        <button class="lightbox-button" data-lightbox="previous" aria-label="Vorheriger Flyer">
+            {% include icons/circle-arrow-left.svg %}
+        </button>
+
+        <p class="lightbox-counter" aria-live="polite"></p>
+
+        <button class="lightbox-button" data-lightbox="next" aria-label="Nächster Flyer">
+            {% include icons/circle-arrow-right.svg %}
+        </button>
+    </footer>
+
+</dialog>

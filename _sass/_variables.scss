@@ -1,0 +1,41 @@
+// FARBEN
+$orange: #e17d05;
+$grey: #303030;
+$dark: #202020;
+$black: black;
+$white: white;
+
+// SCHRIFTEN
+$font-text: 'Space Grotesk', sans-serif;
+$font-display: 'Wahroonga', sans-serif;
+
+// HEADER-HÖHE (für Abstände unter dem fixierten Header)
+$header-height-mobile: 64px;
+$header-height-tablet: 96px;
+$header-height-desktop: 128px;
+
+// BREAKPOINTS
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin button-reset {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}

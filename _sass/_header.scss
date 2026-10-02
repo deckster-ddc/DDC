@@ -1,0 +1,129 @@
+.fixed-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+
+    height: $header-height-mobile;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $black;
+
+    @include tablet {
+        height: $header-height-tablet;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    @include desktop {
+        height: $header-height-desktop;
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+}
+
+.logo {
+    height: 32px;
+
+    @include tablet {
+        height: 64px;
+    }
+
+    @include desktop {
+        height: 96px;
+    }
+}
+
+// Navigation: mobil ein Menü, das von rechts reinfährt
+.header-nav-links {
+    position: fixed;
+    top: $header-height-mobile;
+    right: -100%;
+
+    width: 100%;
+    height: fit-content;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    background-color: $black;
+    transition: .3s ease;
+
+    &.active {
+        right: 0;
+    }
+
+    @include tablet {
+        position: static;
+        width: auto;
+        padding: 0;
+        flex-direction: row;
+        justify-content: end;
+        align-self: end;
+        gap: 36px;
+        background: none;
+    }
+}
+
+// Hamburger-Button
+.ham-menu {
+    @include button-reset;
+    position: relative;
+    height: 36px;
+    width: 36px;
+
+    span {
+        position: absolute;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: $orange;
+        border-radius: 25px;
+        transition: .3s ease;
+
+        &:nth-child(1) {
+            top: 8px;
+        }
+
+        &:nth-child(2) {
+            top: 16px;
+        }
+
+        &:nth-child(3) {
+            top: 24px;
+        }
+    }
+
+    &.active span {
+        &:nth-child(1) {
+            width: 90%;
+            top: 16px;
+            transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+            opacity: 0;
+        }
+
+        &:nth-child(3) {
+            width: 90%;
+            top: 16px;
+            transform: rotate(-45deg);
+        }
+    }
+
+    @include tablet {
+        display: none;
+    }
+}

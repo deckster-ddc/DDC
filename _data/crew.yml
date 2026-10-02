@@ -1,0 +1,30 @@
+# ============================================================
+# THE CREW
+# ============================================================
+# name:  Künstlername
+# bild:  Dateiname aus dem Ordner assets/img/crew
+# genre: was gespielt wird
+# about: Text über dich. Das "|" hinter "about:" heißt: der Text beginnt in der
+#        nächsten Zeile und darf über mehrere Zeilen gehen. Jede Zeile davon
+#        muss gleich weit eingerückt sein (4 Leerzeichen), z. B.:
+#
+#        about: |
+#          Ich lege seit 2010 auf.
+#          Hard Tekk, Schranz und alles dazwischen.
+#
+# links: beliebig viele, jeweils mit name und url
+#
+# Neues Crew-Mitglied? Den ganzen Block ab "- name:" kopieren und darunter einfügen.
+
+- name: DECKSTER
+  bild: fliege_white.png
+  genre: Was spielst du?
+  about: |
+    2, 3 Sätze über dich?
+  links:
+    - name: Soundcloud
+      url: https://soundcloud.com/deckster-live
+    - name: Instagram
+      url: https://www.instagram.com/deckster_sonst_nix
+    - name: Facebook
+      url: https://www.facebook.com/people/Deckster-Sonst-Nix/100086247326747/

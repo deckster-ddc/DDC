@@ -1,0 +1,20 @@
+---
+# Diese leeren Striche oben sind wichtig: nur damit übersetzt Jekyll die Datei zu style.css.
+---
+
+// Hinweis: GitHub Pages nutzt eine ältere Sass-Version.
+// Partials deshalb mit @import einbinden, nicht mit @use.
+
+@import "variables";
+@import "fonts";
+@import "base";
+
+@import "header";
+@import "hero";
+@import "event";
+@import "timeline";
+@import "crew";
+@import "contact";
+@import "gallery";
+@import "lightbox";
+@import "footer";

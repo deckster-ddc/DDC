@@ -1,0 +1,43 @@
+.hero-section {
+    height: 100vh;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    @include desktop {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+}
+
+.hero-image-bg {
+    position: relative;
+    background-image: url('../img/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    // dunkler Schleier über dem Bild
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}

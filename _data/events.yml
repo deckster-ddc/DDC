@@ -1,0 +1,21 @@
+# ============================================================
+# AKTUELLES – kommende Events
+# ============================================================
+# Ein Event beginnt mit einem Minus "-" ganz vorne.
+# Die Einrückung (Leerzeichen) ist wichtig: einfach eine bestehende
+# Zeile kopieren und nur den Text ändern.
+#
+# Mehrere Events? Den ganzen Block ab "- titel:" kopieren und darunter einfügen.
+# Kein Event geplant? Alles unter dieser Erklärung löschen und nur "[]" stehen lassen.
+
+- titel: The Playground
+  untertitel: Hexenjagd Edition
+  datum: 30.04.2026
+  zeit: 22.00 - OPEN END
+  ort: Secret Location
+  lineup:
+    - HUMAN LIKE MACHINES
+    - SEBASTIAN SANDMANN
+    - MARTIN W. _live!
+    - NEEDLEHOPPER
+    - DECKSTER

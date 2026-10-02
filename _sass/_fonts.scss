@@ -1,0 +1,37 @@
+// Pfade sind relativ zur fertigen Datei assets/css/style.css
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../fonts/spaceGrotesk/SpaceGrotesk-Bold.woff2') format('woff2'),
+        url('../fonts/spaceGrotesk/SpaceGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../fonts/spaceGrotesk/SpaceGrotesk-Regular.woff2') format('woff2'),
+        url('../fonts/spaceGrotesk/SpaceGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../fonts/spaceGrotesk/SpaceGrotesk-Light.woff2') format('woff2'),
+        url('../fonts/spaceGrotesk/SpaceGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Wahroonga';
+    src: url('../fonts/wahroonga/Wahroonga.woff2') format('woff2'),
+        url('../fonts/wahroonga/Wahroonga.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

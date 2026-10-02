@@ -1,0 +1,20 @@
+# Grundeinstellungen der Website.
+# Hier muss normalerweise nichts geändert werden.
+
+title: Demolition Dirt Crew
+description: Your East German tekkno network.
+lang: de
+
+# Ordner, in dem alle Flyer liegen. Die Galerie zeigt automatisch jedes Bild aus diesem Ordner.
+flyer_folder: /assets/img/flyer/
+
+sass:
+  style: compressed
+
+exclude:
+  - README.md
+  - ANLEITUNG.md
+  - licenses
+  - Gemfile
+  - Gemfile.lock
+  - vendor

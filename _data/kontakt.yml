@@ -1,0 +1,16 @@
+# ============================================================
+# CONTACT – Links im Kontakt-Bereich
+# ============================================================
+# icon: music, instagram oder facebook
+
+- name: Soundcloud
+  url: https://soundcloud.com/deckster-live
+  icon: music
+
+- name: Instagram
+  url: https://www.instagram.com/deckster_sonst_nix
+  icon: instagram
+
+- name: Facebook
+  url: https://www.facebook.com/people/Deckster-Sonst-Nix/100086247326747/
+  icon: facebook

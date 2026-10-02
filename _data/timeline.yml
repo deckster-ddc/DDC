@@ -1,0 +1,28 @@
+# ============================================================
+# TIMELINE – vergangene Events (neueste oben)
+# ============================================================
+# datum: so wie es angezeigt werden soll, z. B. 02/2026
+# titel: Name des Events
+# flyer: Dateiname aus dem Ordner assets/img/flyer (genau so geschrieben!)
+#
+# Neues Event? Einen Block kopieren und GANZ OBEN einfügen.
+
+- datum: 02/2026
+  titel: the playground
+  flyer: the-playground-underground-02-2026.jpg
+
+- datum: 06/2025
+  titel: the playground
+  flyer: the-playground-b-day-06-2025.png
+
+- datum: 01/2016
+  titel: Para Neujahr
+  flyer: para-neujahr-01-2016.jpg
+
+- datum: 05/2015
+  titel: Triebwerk Dresden
+  flyer: triebwerk-dresden-ddc-05-2015.jpg
+
+- datum: 06/2012
+  titel: from tekkno to core
+  flyer: from-tekkno-to-core-06-2012.jpg

@@ -1,0 +1,66 @@
+---
+layout: default
+title: Galerie
+permalink: /galerie/
+---
+{% comment %}
+    Die Galerie zeigt automatisch jedes Bild aus assets/img/flyer.
+    Titel und Datum kommen aus dem Dateinamen:
+    "the-playground-underground-02-2026.jpg" -> "the playground underground", "02/2026"
+    Sortiert wird nach Datum, neueste zuerst. Bilder ohne Datum stehen am Ende.
+{% endcomment %}
+
+{% assign image_types = ".jpg .jpeg .png .webp .gif" | split: " " %}
+{% assign entries = "" %}
+
+{% for file in site.static_files %}
+    {% assign ext = file.extname | downcase %}
+    {% unless file.path contains site.flyer_folder and image_types contains ext %}{% continue %}{% endunless %}
+
+    {% assign parts = file.basename | split: "-" %}
+    {% assign month_index = parts.size | minus: 2 %}
+    {% assign year = parts.last %}
+    {% assign month = parts[month_index] %}
+
+    {% if parts.size > 2 and year.size == 4 and month.size == 2 %}
+        {% assign title = parts | slice: 0, month_index | join: " " %}
+        {% assign date = month | append: "/" | append: year %}
+        {% assign year_number = year | plus: 0 %}
+        {% if year_number > 1900 %}
+            {% assign sort_key = year | append: month %}
+        {% else %}
+            {% assign sort_key = "000000" %}
+        {% endif %}
+    {% else %}
+        {% assign title = parts | join: " " %}
+        {% assign date = "" %}
+        {% assign sort_key = "000000" %}
+    {% endif %}
+
+    {% capture entry %}{{ sort_key }}|{{ file.path }}|{{ title }}|{{ date }};;{% endcapture %}
+    {% assign entries = entries | append: entry %}
+{% endfor %}
+
+{% assign flyers = entries | split: ";;" | sort | reverse %}
+
+<main class="gallery-section">
+
+    <header class="gallery-header">
+        <h1>Galerie</h1>
+        <p>Event Flyer seit 2012</p>
+    </header>
+
+    <section class="gallery" data-lightbox-group>
+        {% for entry in flyers %}
+        {% assign flyer = entry | split: "|" %}
+        {% assign label = flyer[2] %}
+        {% if flyer.size > 3 %}{% assign label = label | append: " – " | append: flyer[3] %}{% endif %}
+
+        <button class="gallery-item" data-lightbox-src="{{ flyer[1] | relative_url }}"
+            data-lightbox-title="{{ label }}" aria-haspopup="dialog">
+            <img src="{{ flyer[1] | relative_url }}" alt="Eventflyer {{ label }}" loading="lazy">
+        </button>
+        {% endfor %}
+    </section>
+
+</main>
